@@ -1,9 +1,10 @@
 # User Variables
 user_name = input("What Is Your Name? ")
 users_bets = int(input("How Many Bets Would You Like To Do? "))
+currency_symbol = input("What is the Symbol of your Currency? ")
 
 # Counting Variables
-bet_count = 0.0
+bet_count = 0
 amount_lost = 0.0
 bet_amount = 1.0
 
@@ -15,9 +16,9 @@ while users_bets != 0:
     amount_lost += bet_amount
     
     # Prints Out Each Bet (Can Be Disabled By Commenting It Out)
-    print("Amount Lost " + str(amount_lost))
-    print("Bet Amount " + str(bet_amount))
-    print("Bet Count " + str(bet_count+1) + "\n")
+    print("Amount Lost: " + '{0:.8f}'.format((amount_lost*0.00000001)) + " " + currency_symbol)
+    print("Bet Amount: " + '{0:.8f}'.format((bet_amount*0.00000001)) + " " + currency_symbol)
+    print("Bet Count: " + str(bet_count+1) + " Bets\n")
     
     # Subtracts From Bets Left & Increases Total Bets Done
     users_bets -= 1
@@ -32,6 +33,6 @@ while users_bets != 0:
 print("=========================================================================")
 print(user_name + "'s Stupid Stats")
 print("Number of Bets: " + str(bet_count))
-print("Last Bet Amount: " + '{0:.8f}'.format((bet_amount*0.00000001)) + " BTC")
-print("Amount Lost: " + '{0:.8f}'.format((amount_lost*0.00000001)) + " BTC")
+print("Last Bet Amount: " + '{0:.8f}'.format((bet_amount*0.00000001)) + " " + currency_symbol)
+print("Amount Lost: " + '{0:.8f}'.format((amount_lost*0.00000001)) + " " + currency_symbol)
 print("=========================================================================")
