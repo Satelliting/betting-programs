@@ -1,17 +1,15 @@
-# Betting Projgrams
+# Betting Programs
 
 
 These are just a couple of simple programs that help my friends and I with betting and gambling.
 
-  - 100-percent-increase-every-5-bets.py
-  - See HTML in the right
-  - Magic
+  - increase-interval.py
 
-### 100-percent-increase-every-5-bets.py
+### increase-interval.py
 
   - Based on Dice
   - Helps with a simple idea of 'TOTAL LOSS POSSIBLE'
-  - Enables you to know how many bets you can withstand if you increase your bet every 5 bets.
+  - Enables you to know how many bets you can withstand if you increase your bet every 'x' bets with a 'y' increase percentage.
   - Use it here: https://www.programiz.com/python-programming/online-compiler/
 
 License
